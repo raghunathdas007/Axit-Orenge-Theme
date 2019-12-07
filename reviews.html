@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WELCOME | PROJECT NAME</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--google fonts--->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <!--Fontawsome-->
+     <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <!--Bootstraps-->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <!--Custom Css-->
+    <link href="css/style.css" rel="stylesheet"/>
+   
+
+       <style>
+        /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   float: right;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;
+        margin: 0 20px;
+       }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #ffffff;
+  padding-top: 5px;
+    text-decoration: none;
+     text-transform: capitalize;
+    font-size: 16px;
+}
+       ul.topnav li a.none {
+           display: none;
+       }           
+
+
+/* Change background color of links on hover */
+ul.topnav li a:hover,
+ul.topnav li a:focus,
+       ul.topnav li a.active{      
+       color: #ff8b38;
+    border-top: 2px solid #ff8b38;
+         display: block;
+       }
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+       
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:767px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:767px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+       ul.topnav li a.none:hover,
+ul.topnav li a.none:focus{     
+         display: none;
+      color: #ff8b38;
+    border-top: 2px solid #ff8b38;
+       }
+      ul.topnav li a.none {
+           display: block;
+       }  
+       }
+  </style>
+
+    </head>
+    
+<body>
+    
+   <header class="header">
+       <div class="container">
+            <div class="row">
+                 <div class="col-md-3 col-sm-2 col-xs-12">
+                       <a href="#" class="logo"><img src="images/logo.png" alt="logo" title=""/></a>
+                  </div>
+                   <div class="col-md-9 col-sm-10 col-xs-12">
+                        <nav class="menu">
+                             <ul class="clearfix topnav" id="myTopnav">
+                                  <li><a href="#" class="none">menu</a></li>
+                                 <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">features</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">pricing</a></li>
+                  <li><a href="#">reviews</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                  </li>
+                </ul>
+             </nav>
+            
+            </div>
+            
+        
+        </div>
+        </div>
+    </header> <!--end of the header-->
+     <section class="reviews-section">
+         <div class="container">
+    <h2>reviews</h2>
+        </div>
+    </section>
+    
+    <section class="reviews-contain">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <img src="images/profile1.png" class="img-responsive" alt="profile1" title=""/>
+            </div>
+            <div class="col-md-9 col-sm-9">
+            <h2>tinku</h2>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-o"></i>
+                 <i class="fa fa-star-o"></i>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos</p>
+            
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-md-3 col-sm-3">
+                <img src="images/profile3.png" class="img-responsive" alt="profile3" title=""/>
+            </div>
+            <div class="col-md-9 col-sm-9">
+            <h2>susan w</h2>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star"></i>
+                 <i class="fa fa-star-o"></i>
+                <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p>
+            </div>
+        </div>
+        </div>
+  </section>
+    
+    <section class="reviews-form-section">
+      <div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-4">
+    <form class="reviews-form">
+          <div class="form-group">
+    <label for="textname">Name</label>
+    <input type="name" class="form-control" id="textname" placeholder="name">
+  </div>
+        <div class="form-group">
+            <label for="textaddress">address</label>
+            <input type="address" class="form-control" id="textaddress" placeholder="address">
+        </div>
+        
+       <div class="form-group">
+    <label for="textemailid">Email address</label>
+    <input type="email" class="form-control" id="textemailid" placeholder="email">
+  </div>
+         <div class="form-group">
+    <label for="textmessages">Messages</label>
+    <input type="messages" class="form-control" id="textmessages" placeholder="messages">
+  </div>
+         <div class="form-group">
+    <label for="textphnno">Phn no</label>
+    <input type="phn no" class="form-control" id="textphnno" placeholder="phn no">
+  </div>
+        <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+         </div>
+         <div class="col-md-8 col-sm-8">
+             <img src="images/roadway.png" class="img-responsive" alt="roadway" title=""/>
+          </div>
+        </div>
+        </div>
+    </section>
+      <footer class="footer text-center">
+        
+        <div class="footer-social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-stumbleupon"></i></a>
+            <a href="#"><i class="fa fa-feed"></i></a>
+        </div>
+        <p class="copyright">
+        &copy; 2015 Axure Themes
+        </p>
+
+    </footer>
+    
+    
+    
+ <!---Javascript--->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>  
+    
+</body>

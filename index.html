@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WELCOME | PROJECT NAME</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--google fonts--->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <!--Fontawsome-->
+     <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <!--Bootstraps-->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <!--Custom Css-->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/New%2520folder/style.css" rel="stylesheet"/>
+    <link href="css/New%2520folder/style.scss" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- js -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    
+   <style>
+        /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   float: right;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;
+        margin: 0 20px;
+       }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #ffffff;
+  padding-top: 5px;
+    text-decoration: none;
+     text-transform: capitalize;
+    font-size: 16px;
+}
+       ul.topnav li a.none {
+           display: none;
+       }           
+
+
+/* Change background color of links on hover */
+ul.topnav li a:hover,
+ul.topnav li a:focus,
+       ul.topnav li a.active{      
+       color: #ff8b38;
+    border-top: 2px solid #ff8b38;
+         display: block;
+       }
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+       
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:767px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:767px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+       ul.topnav li a.none:hover,
+ul.topnav li a.none:focus{     
+         display: none;
+      color: #ff8b38;
+    border-top: 2px solid #ff8b38;
+       }
+      ul.topnav li a.none {
+           display: block;
+       }  
+       }
+  </style>
+
+    </head>
+    
+<body>
+    
+   <header class="header">
+       <div class="container">
+            <div class="row">
+                 <div class="col-md-3 col-sm-2 col-xs-12">
+                       <a href="#" class="logo"><img src="images/logo.png" class="img-responsive "alt="logo" title=""/></a>
+                  </div>
+                   <div class="col-md-9 col-sm-10 col-xs-12">
+                        <nav class="menu">
+                             <ul class="clearfix topnav" id="myTopnav">
+                                  <li><a href="#" class="none">menu</a></li>
+                                 <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">features</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">pricing</a></li>
+                  <li><a href="#">reviews</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                  </li>
+                </ul>
+             </nav>
+            
+            </div>
+            
+        
+        </div>
+        </div>
+    </header> <!--end of the header-->
+    
+    <section class="banner"> 
+          <div class="container">
+               <div class="banner-contain">
+               <img src="images/logo2.png" alt="logo2" title=""/>
+                 <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                   <span class="underline-small"></span>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+accumsan et viverra justo commodo.</p>
+                        <a href="#" class="primary-btn">download</a>
+                </div>
+         </div> 
+    </section><!--end of the banner-->
+    
+   <section class="social-section">
+        <div class="container"> 
+            <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-7">
+                     <h2>Social Media</h2>
+                           <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                              Aenean euismod bibendum laoreet.</P>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-5">
+                      <div class="social-icons">
+                     <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-stumbleupon"></i></a>
+            <a href="#"><i class="fa fa-feed"></i></a>
+                 </div>
+                      </div>
+           </div>
+       </div>
+    </section><!--end of the social sections-->
+    
+    <section class="con-section">         
+        <div class="container"> 
+            <div class="row">
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                      <h2>Welcome to our site</h2>
+                    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.</p><br>
+
+<p> tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década 
+                      </p><br>
+                        
+                     <a href="#" class="secondary-btn">Download</a>
+                </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                <img src="images/features.png" alt="features" title=""/>
+                </div>
+             </div>
+        </div>
+    </section>
+    <section class="sub-section">
+       <div class="container">   
+            <div class="col-lg-6 col-md-6 col-sm-6"> 
+                       <img src="images/face image.png" alt="face image" title=""/>
+                  </div>
+                       <div class="col-lg-6 col-md-6 col-sm-6"> 
+                           <div class="sublist-section">
+                           <h2>Sub list section</h2>
+                             <span class="underline"></span>
+                           <p>também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e maisus PageMaker.</p>
+                               
+                           <ul class="sub-list-list">
+                               <li class="fst">
+                                   <h3>title</h3>
+                               <p>do passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                               </li>
+                            
+                               <li class="snd">
+                                   <h3>title</h3>
+                               <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para </p>
+                                   </li>
+                           </ul>
+                           </div>
+                           </div>
+        </div>  . 
+    </section>
+    <section class="standard-section">
+         <div class="container"> 
+            <div class="row">
+                  <div class="col-lg-7 col-md-7 col-sm-8">  
+                    <h2>Standard Picture Section</h2> 
+                         <span class="underline"></span>
+                     <p>também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e maisus PageMaker.<br>
+também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e maisus PageMaker.</p>
+
+<p>
+também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e maisus PageMaker.</p>
+                       </div>
+                      <div class="col-lg-5 col-md-5 col-sm-4"> 
+                           <img src="images/roadway.png" alt="roadway" title=""/>
+    </div>
+                </div>
+             </div>
+       
+                      </section>
+    <section class="awesome-section">  
+        <div class="container"> 
+            <div class="title-section">
+                <h2>WHY THIS IS AWESOME</h2>
+                <span class="underline"></span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  
+            </div> 
+            <div class="row awsome-content">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="box">
+                        <div class="icon-area"><i class="fa fa-lightbulb-o"></i></div>
+                        <h3>Thoughtful Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Aenean euismod bibendum laoreet. Proin gravida 
+dolor sit amet lacus accumsan et viverra.</p>
+                     </div>
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="box">
+                        <div class="icon-area"><i class="fa fa-keyboard-o"></i></div>
+                        <h3>Well Crafted</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Aenean euismod bibendum laoreet. Proin gravida 
+dolor sit amet lacus accumsan et viverra.</p>
+                     </div>
+                     </div>
+                 <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="box">
+                        <div class="icon-area"><i class="fa fa-bolt"></i></div>
+                         <h3>Easy to Customize</h3> 
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+elit. Aenean euismod bibendum laoreet. Proin gravida 
+dolor sit amet lacus accumsan et viverra.</p>
+                    
+                     </div>
+                    </div>
+                    
+              </div>
+        </div>    
+</section>
+    
+    <section class="stylish">
+            <div class="container">
+                    <h2>STYLISH AXURE DESIGN</h2>
+                    <span class="underline"></span>
+                    <p>Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                 <a href="#" class="third-btn">Download</a>
+                </div>
+            </section>
+    
+      <section class="testimonial">
+            <div class="container">
+                <div class="title-section">
+                    <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+                    <span class="underline"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="row testi-cont">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="client-says">
+                            <p>Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit. Doloribus 
+accusamus expedita repellat similique 
+odio aspernatur ex, architecto eaque 
+quo suscipit.</p>
+                        </div>
+                        <div class="client-detail">
+                            <figure><img src="images/profile1.png" alt="profile1" title=""/></figure>
+                            <div class="client">
+                            <h3>Jeremy H.</h3>
+                           <p>Manager</p>
+                                </div>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="client-says">
+                            <p>Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit. Doloribus 
+accusamus expedita repellat similique 
+odio aspernatur ex, architecto eaque 
+quo suscipit.</p>
+                            </div>
+                        <div class="client-detail">
+                            <figure><img src="images/profile2.png" alt="profile2" title=""/></figure>
+                            <div class="client">
+                            <h3>John S. </h3>
+                         <p>Freelancer</p>
+                            </div>
+                        </div>
+                    
+                </div>
+                          <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="client-says">
+                            <p>Lorem ipsum dolor sit amet, 
+consectetur adipisicing elit. Doloribus 
+accusamus expedita repellat similique 
+odio aspernatur ex, architecto eaque 
+quo suscipit.</p>
+                            </div>
+                        <div class="client-detail">
+                            <figure><img src="images/profile3.png" alt="profile3" title=""/></figure>
+                            <div class="client">
+                            <h3>Susan W.</h3>
+                            <p>Photographer</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+                
+    </section>
+    <footer class="footer text-center">
+        
+        <div class="footer-social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-stumbleupon"></i></a>
+            <a href="#"><i class="fa fa-feed"></i></a>
+        </div>
+        <p class="copyright">
+        &copy; 2015 Axure Themes
+        </p>
+
+    </footer>
+    
+    
+    
+ <!---Javascript--->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/classie.js"></script>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>    
+    
+</body>
+    </html>
